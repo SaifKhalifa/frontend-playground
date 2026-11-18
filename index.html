@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Task 1</title>
+</head>
+<body>
+    <header>
+        <h1> Application & Qualification Matrix</h1>        
+    </header>
+    <main>
+        <section>
+            <form>
+                <section>
+                    <h3>Personal Details</h3>
+
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" maxlength="20" required autocomplete="name">
+
+                    <div style="margin: 1rem;"></div>
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" required autocomplete="email">
+
+                    <div style="margin: 1rem;"></div>
+
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="tel" required autocomplete="tel">
+
+                    <div style="margin: 1rem;"></div>
+                    
+                    <label for="bod">Birthdate:</label>
+                    <input id="bod" type="date" required autocomplete="bday">                    
+
+                    <div style="margin: 1rem;"></div>
+                    
+                    <label for="certificate-level">certificate-level:</label>
+                    <select id="certificate-level" required>
+                        <option value="bachelor">bachelor</option>
+                        <option value="diploma">diploma</option>
+                    </select>                                        
+
+                </section>
+
+                <section>
+                    <h3>Experience</h3>
+                    
+                    <input id="exp-1y" type="radio" required name="experience" value="1y">
+                    <label for="exp-1y">1 Year</label>
+                    
+                    <div style="margin: 1rem;"></div>
+                    
+                    <input id="exp-2y-plus" type="radio" required name="experience" value="2y+">
+                    <label for="exp-2y-plus">+2 Years</label>
+                    
+                    <div style="margin: 1rem;"></div>
+
+                    <input id="exp-5y-plus" type="radio" required name="experience" value="5y+">
+                    <label for="exp-5y-plus">+5 Years</label>
+                </section>
+                
+                <section>
+                    <h3>Your CV</h3>
+
+                    <label for="cv-upload">Upload Your CV:</label>
+                    <input id="cv-upload" type="file" required accept=".pdf, application/pdf">                                        
+                </section>
+
+                <hr/>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </section>
+    </main>    
+</body>
+</html>
